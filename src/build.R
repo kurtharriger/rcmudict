@@ -11,7 +11,7 @@ Sys.setlocale('LC_ALL','C')
 data <- scan('tmp/cmudict.tsv', sep="\n", what="character")
 rows <- lapply(data, strsplit, split="\\|")
 cmudict <- data.frame(pronounciation=sapply(strsplit(data, '\\|'), "[[", 2), stringsAsFactors=FALSE)
-rownames(df) <- sapply(strsplit(data, '\\|'), "[[", 1)
+rownames(cmudict) <- sapply(strsplit(data, '\\|'), "[[", 1)
 
 system('mkdir -p ../data')
 save(cmudict, file="../data/cmudict.rda")
