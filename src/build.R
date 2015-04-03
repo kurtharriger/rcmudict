@@ -10,8 +10,8 @@ system('LC_CTYPE=C sed -e "/^;;;/d" -e "s/ /|/"  < cmudict-0.7b > tmp/cmudict.ts
 Sys.setlocale('LC_ALL','C') 
 data <- scan('tmp/cmudict.tsv', sep="\n", what="character")
 rows <- lapply(data, strsplit, split="\\|")
-df <- data.frame(pronounciation=sapply(strsplit(data, '\\|'), "[[", 2), stringsAsFactors=FALSE)
+cmudict <- data.frame(pronounciation=sapply(strsplit(data, '\\|'), "[[", 2), stringsAsFactors=FALSE)
 rownames(df) <- sapply(strsplit(data, '\\|'), "[[", 1)
 
 system('mkdir -p ../data')
-save(df, file="../data/cmudict.rda")
+save(cmudict, file="../data/cmudict.rda")
