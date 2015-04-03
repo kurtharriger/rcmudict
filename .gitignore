@@ -1,6 +1,6 @@
 .Rproj.user
 .Rhistory
 .RData
-data/data.rda
-tmp/
 data/cmudict.rda
+tmp/
+*.tar.gz
