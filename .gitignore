@@ -3,3 +3,4 @@
 .RData
 data/data.rda
 tmp/
+data/cmudict.rda

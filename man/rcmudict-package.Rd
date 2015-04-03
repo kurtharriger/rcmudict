@@ -4,11 +4,10 @@
 \docType{package}
 \title{
 What the package does (short line)
-~~ package title ~~
+CMU Phonetic Dictionary
 }
 \description{
-More about what it does (maybe more than one line)
-~~ A concise (1-5 lines) description of the package ~~
+CMU Phonetic dictionary
 }
 \details{
 \tabular{ll}{
@@ -16,26 +15,20 @@ Package: \tab rcmudict\cr
 Type: \tab Package\cr
 Version: \tab 1.0\cr
 Date: \tab 2015-04-03\cr
-License: \tab What license is it under?\cr
+License: \tab MIT\cr
 }
-~~ An overview of how to use the package, including the most important functions ~~
+
 }
 \author{
-Who wrote it
+Kurt Harriger
 
-Maintainer: Who to complain to <yourfault@somewhere.net>
-~~ The author and/or maintainer of the package ~~
+Maintainer: Kurt Harriger <kurtharriger@gmail.com>
 }
 \references{
-~~ Literature or other references for background information ~~
+http://www.speech.cs.cmu.edu/cgi-bin/cmudict
 }
-~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R documentation ~~
-~~ directory ~~
-\keyword{ package }
+\keyword{ cmu phonetic pronouncing dictionary }
 \seealso{
-~~ Optional links to other man pages, e.g. ~~
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 }
 \examples{
-~~ simple examples of the most important functions ~~
 }
