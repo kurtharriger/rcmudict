@@ -1,19 +1,19 @@
 language: r
 sudo: required
 before_script: 
-  - (cd src && make)
+- (cd src && make)
 before_deploy:
-  - mkdir deploy
-  - mv *.tar.gz deploy
+- mkdir deploy
+- mv *.tar.gz deploy
 deploy:
   skip_cleanup: true
   provider: s3
   access_key_id: AKIAJCGFQEZ3CD243KHA
-  secret_access_key:
-    secure: JbE864GTKaPnVGRXv8MJGqFdizrFHoHJBl61Y/1noVDxKJKvhRnSCubHW1AtTVEzarHjj4dVT7yOIN7CN99mKgxYoPt7wXoxBKtwCC07l7Uimk/CdsrSxgx9vaWOht0aGaZdFl3dxj7UCmSPM5bnSEB/XJcQTv7X1EgXfnfOs5Q=
   bucket: kurtharriger-rmeetup
   local-dir: deploy
   upload-dir: rcmudict
   acl: public_read
   on:
     repo: kurtharriger/rcmudict
+  secret_access_key:
+    secure: oTKX5T18/Zk3F44voJXNktjpAMgzhv2YxtAaUJyWZtYXUb/u2hEPO4YN6aflb8RZqeE2fcRxu0h/KuQbbuN7tvsNrDi3hE9Y6/aRKThfM1KVcv7IqJoCuPSwZnCBtaHnFDCa9lmpfBeIR2cKR8bPRwzeCfC/3VNELt0SKPFG5WM=
