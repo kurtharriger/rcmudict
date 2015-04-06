@@ -1,7 +1,7 @@
 language: r
 sudo: required
 before_script: 
-  - cd src && make
+  - (cd src && make)
 before_deploy:
   - mkdir deploy
   - mv *.tar.gz deploy
