@@ -1,8 +1,7 @@
 language: r
 sudo: required
 before_script: 
-- sed -i '' "s/Version: \(.*\)/Version: \1.$TRAVIS_BUILD_NUMBER/" DESCRIPTION
-- (cd src && make)
+- ./before_script.sh
 before_deploy:
 - mkdir deploy
 - mv *.tar.gz deploy
